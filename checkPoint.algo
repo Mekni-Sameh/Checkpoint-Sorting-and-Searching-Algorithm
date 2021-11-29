@@ -1,0 +1,16 @@
+ALGORITHM insersion card
+VAR
+    Tab: ARRAY_OF Integer[n];
+    i: INTEGER;
+    j:INTEGER;
+BEGIN
+ Read(Tab[n]);
+ For (i=0 in Tab) DO
+  j==i-1;
+  WHILE (j>=0 and Tab[j] > Tab[i]) DO
+     Tab[j]==Tab[j+1];
+     j==j-1;
+  END_WHILE
+  Tab[j+1]==Tab[i];
+ END For
+END
